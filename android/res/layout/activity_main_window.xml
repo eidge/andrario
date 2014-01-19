@@ -1,0 +1,40 @@
+<LinearLayout android:id="@+id/main_layout" 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    tools:context=".MainWindow"
+    android:onClick="openOptions" >
+	
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+	    <TextView android:id="@+id/vario_text"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_horizontal"
+	        android:layout_gravity="center_vertical"
+	        android:textSize="120sp" />
+	    
+	   	<TextView android:id="@+id/vario_units"
+	   	    android:visibility="invisible"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/vario_text"
+	        android:layout_alignParentRight="true"
+	        android:textSize="30sp"
+	        android:layout_marginRight="40sp"
+	        android:layout_marginTop="-30sp"
+	        android:text = "@string/vario_units_text"
+	        />
+	    
+	    
+    </RelativeLayout>
+    
+
+
+</LinearLayout>
